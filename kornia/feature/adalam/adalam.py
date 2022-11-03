@@ -2,16 +2,15 @@
 # https://github.com/cavalli1234/AdaLAM
 # Copyright (c) 2020, Luca Cavalli
 
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional, Tuple, Union
 
 import torch
 from torch import Tensor
 
 from kornia.feature.laf import get_laf_center, get_laf_orientation, get_laf_scale
 from kornia.testing import KORNIA_CHECK_LAF, KORNIA_CHECK_SHAPE
-from kornia.utils.helpers import get_cuda_device_if_available
 
-from .core import adalam_core
+from .core import _no_match, adalam_core
 from .utils import dist_matrix
 
 
@@ -28,7 +27,7 @@ def get_adalam_default_config():
         'refit': True,  # Whether to perform refitting at the end of the RANSACs. Generally improves accuracy at the cost of runtime.   # noqa: E501
         'force_seed_mnn': True,  # Whether to consider only MNN for the purpose of selecting seeds. Generally improves accuracy at the cost of runtime.    # noqa: E501
         # You can provide a MNN mask in input to skip MNN computation and still get the improvement.
-        'device': get_cuda_device_if_available(),  # Device to be used for running AdaLAM. Use GPU if available.   # noqa: E501
+        'device': torch.device('cpu'),  # Device to be used for running AdaLAM. Use GPU if available.
     }
     return DEFAULT_CONFIG
 
@@ -72,7 +71,7 @@ def match_adalam(
     else:
         config_ = config
     adalam_object = AdalamFilter(config_)
-    idxs = adalam_object.match_and_filter(
+    idxs, quality = adalam_object.match_and_filter(
         get_laf_center(lafs1).reshape(-1, 2),
         get_laf_center(lafs2).reshape(-1, 2),
         desc1,
@@ -83,15 +82,15 @@ def match_adalam(
         get_laf_orientation(lafs2).reshape(-1),
         get_laf_scale(lafs1).reshape(-1),
         get_laf_scale(lafs2).reshape(-1),
+        return_dist=True,
     )
-    quality = torch.ones(len(idxs), 1, dtype=desc1.dtype, device=desc1.device)
     return quality, idxs
 
 
 class AdalamFilter:
     DEFAULT_CONFIG = get_adalam_default_config()
 
-    def __init__(self, custom_config: dict = None):
+    def __init__(self, custom_config: Optional[dict] = None):
         """This class acts as a wrapper to the method AdaLAM for outlier filtering.
 
         init args:
@@ -104,8 +103,8 @@ class AdalamFilter:
             for key, val in custom_config.items():
                 if key not in self.config.keys():
                     print(
-                        "WARNING: custom configuration contains a key which is not recognized ({key}). "
-                        "Known configurations are {list(self.config.keys())}."
+                        f"WARNING: custom configuration contains a key which is not recognized ({key}). "
+                        f"Known configurations are {list(self.config.keys())}."
                     )
                     continue
                 self.config[key] = val
@@ -116,14 +115,15 @@ class AdalamFilter:
         k2: torch.Tensor,
         putative_matches: torch.Tensor,
         scores: torch.Tensor,
-        mnn: torch.Tensor = None,
-        im1shape: tuple = None,
-        im2shape: tuple = None,
-        o1: torch.Tensor = None,
-        o2: torch.Tensor = None,
-        s1: torch.Tensor = None,
-        s2: torch.Tensor = None,
-    ):
+        mnn: Optional[torch.Tensor] = None,
+        im1shape: Optional[tuple] = None,
+        im2shape: Optional[tuple] = None,
+        o1: Optional[torch.Tensor] = None,
+        o2: Optional[torch.Tensor] = None,
+        s1: Optional[torch.Tensor] = None,
+        s2: Optional[torch.Tensor] = None,
+        return_dist: bool = False,
+    ) -> Union[Tuple[Tensor, Tensor], Tensor]:
         """Call the core functionality of AdaLAM, i.e. just outlier filtering. No sanity check is performed on the
         inputs.
 
@@ -151,6 +151,7 @@ class AdalamFilter:
             s1/s2: keypoint scales. They can be None if 'scale_rate_threshold' in config is set to None.
                    See documentation on 'scale_rate_threshold' in the DEFAULT_CONFIG.
                    Expected a float32 tensor with shape (num_keypoints_in_source/destination_image,)
+            return_dist: if True, inverse confidence value is also outputted.
 
         Returns:
             Filtered putative matches.
@@ -170,9 +171,23 @@ class AdalamFilter:
                 s1=s1,
                 s2=s2,
                 config=self.config,
+                return_dist=return_dist,
             )
 
-    def match_and_filter(self, k1, k2, d1, d2, im1shape=None, im2shape=None, o1=None, o2=None, s1=None, s2=None):
+    def match_and_filter(
+        self,
+        k1,
+        k2,
+        d1,
+        d2,
+        im1shape=None,
+        im2shape=None,
+        o1=None,
+        o2=None,
+        s1=None,
+        s2=None,
+        return_dist: bool = False,
+    ):
         """Standard matching and filtering with AdaLAM. This function:
 
             - performs some elementary sanity check on the inputs;
@@ -200,6 +215,7 @@ class AdalamFilter:
             s1/s2: keypoint scales. They can be None if 'scale_rate_threshold' in config is set to None.
                    See documentation on 'scale_rate_threshold' in the DEFAULT_CONFIG.
                    Expected an array with shape (num_keypoints_in_source/destination_image,)
+            return_dist: if True, inverse confidence value is also outputted.
 
         Returns:
             Filtered putative matches.
@@ -218,6 +234,11 @@ class AdalamFilter:
                     "Please either provide orientations or set 'orientation_difference_threshold' to None to disable orientations filtering"  # noqa: E501
                 )
         k1, k2, d1, d2, o1, o2, s1, s2 = self.__to_torch(k1, k2, d1, d2, o1, o2, s1, s2)
+        if (len(d2) <= 1) or (len(d1) <= 1):
+            idxs, dists = _no_match(d1)
+            if return_dist:
+                return idxs, dists
+            return idxs
         distmat = dist_matrix(d1, d2, is_normalized=False)
         dd12, nn12 = torch.topk(distmat, k=2, dim=1, largest=False)  # (n1, 2)
 
@@ -229,7 +250,9 @@ class AdalamFilter:
         else:
             mnn = None
 
-        return self.filter_matches(k1, k2, putative_matches, scores, mnn, im1shape, im2shape, o1, o2, s1, s2)
+        return self.filter_matches(
+            k1, k2, putative_matches, scores, mnn, im1shape, im2shape, o1, o2, s1, s2, return_dist
+        )
 
     def __to_torch(self, *args):
         return (

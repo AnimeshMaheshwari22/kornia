@@ -1,12 +1,12 @@
 import warnings
-from typing import Any, Dict, List, Optional, Tuple, Union, cast
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import torch
 
 from kornia.augmentation import random_generator as rg
 from kornia.augmentation._2d.mix.base import MixAugmentationBase, MixAugmentationBaseV2
 from kornia.augmentation.utils import _shape_validation
-from kornia.constants import DataKey
+from kornia.constants import DataKey, DType
 from kornia.core import Tensor
 from kornia.geometry.bbox import bbox_to_mask, infer_bbox_shape
 
@@ -108,7 +108,7 @@ class RandomCutMix(MixAugmentationBase):
                 "The height and width arguments will be removed finally.",
                 category=DeprecationWarning,
             )
-        self._param_generator = cast(rg.CutmixGenerator, rg.CutmixGenerator(cut_size, beta, num_mix, p=p))
+        self._param_generator: rg.CutmixGenerator = rg.CutmixGenerator(cut_size, beta, num_mix, p=p)
         warnings.warn("`RandomCutMix` is deprecated. Please use `RandomCutMixV2` instead.")
 
     def apply_transform(  # type: ignore
@@ -209,7 +209,7 @@ class RandomCutMixV2(MixAugmentationBaseV2):
         data_keys: List[Union[str, int, DataKey]] = [DataKey.INPUT],
     ) -> None:
         super().__init__(p=1.0, p_batch=p, same_on_batch=same_on_batch, keepdim=keepdim, data_keys=data_keys)
-        self._param_generator = cast(rg.CutmixGenerator, rg.CutmixGenerator(cut_size, beta, num_mix, p=p))
+        self._param_generator: rg.CutmixGenerator = rg.CutmixGenerator(cut_size, beta, num_mix, p=p)
 
     def apply_transform_class(self, input: Tensor, params: Dict[str, Tensor], flags: Dict[str, Any]) -> Tensor:
         height, width = params["image_shape"]
@@ -222,9 +222,9 @@ class RandomCutMixV2(MixAugmentationBaseV2):
             out_labels.append(
                 torch.stack(
                     [
-                        input.to(device=input.device, dtype=params["dtype"]),
-                        labels_permute.to(device=input.device, dtype=params["dtype"]),
-                        lam.to(device=input.device, dtype=params["dtype"]),
+                        input.to(device=input.device, dtype=DType.to_torch(int(params["dtype"].item()))),
+                        labels_permute.to(device=input.device, dtype=DType.to_torch(int(params["dtype"].item()))),
+                        lam.to(device=input.device, dtype=DType.to_torch(int(params["dtype"].item()))),
                     ],
                     dim=1,
                 )
@@ -236,13 +236,13 @@ class RandomCutMixV2(MixAugmentationBaseV2):
         self, input: Tensor, params: Dict[str, Tensor], flags: Optional[Dict[str, Any]] = None
     ) -> Tensor:
         out_labels = []
-        lam = torch.zeros((len(input)), device=input.device, dtype=params["dtype"])
+        lam = torch.zeros((len(input)), device=input.device, dtype=DType.to_torch(int(params["dtype"].item())))
         for _ in range(self._param_generator.num_mix):
             out_labels.append(
                 torch.stack(
                     [
-                        input.to(device=input.device, dtype=params["dtype"]),
-                        input.to(device=input.device, dtype=params["dtype"]),
+                        input.to(device=input.device, dtype=DType.to_torch(int(params["dtype"].item()))),
+                        input.to(device=input.device, dtype=DType.to_torch(int(params["dtype"].item()))),
                         lam,
                     ],
                     dim=1,
