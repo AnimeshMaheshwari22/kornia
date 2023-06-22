@@ -2,25 +2,15 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203957082-2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            gtag('config', 'UA-203957082-2');
-            
-        </script>
-    <link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Search" href="../../../../search.html" />
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../../../../genindex.html" /><link rel="search" title="Search" href="../../../../search.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/_modules/kornia/geometry/transform/imgwarp.html" />
 
-    <link rel="shortcut icon" href="../../../../_static/kornia_logo_favicon.png"/><meta name="generator" content="sphinx-5.3.0, furo 2022.09.29"/>
+    <link rel="shortcut icon" href="../../../../_static/kornia_logo_favicon.png"/><!-- Generated with Sphinx 6.2.1 and Furo 2023.05.20 -->
         <title>kornia.geometry.transform.imgwarp - Kornia</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo.css?digest=e6660623a769aa55fea372102b9bf3151b292993" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/css/main.css" />
     
@@ -180,47 +170,26 @@
   
   
 </a><form class="sidebar-search-container" method="get" action="../../../../search.html" role="search">
-  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">GET STARTED</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../get-started/introduction.html">What is Kornia ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../get-started/introduction.html">What is Kornia library ?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../get-started/highlights.html">Highlighted Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../get-started/installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../get-started/about.html">About</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://kornia-tutorials.readthedocs.io/en/latest/">Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../get-started/training.html">Training API (experimental)</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://docs.luxonis.com/en/latest/pages/tutorials/creating-custom-nn-models/#kornia">OpenCV AI Kit</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">KORNIA APPLICATIONS</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/intro.html">Computer Vision Algorithms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/face_detection.html">Face Detection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_augmentations.html">Image Augmentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_classification.html">Image Classification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_matching.html">Image Matching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_stitching.html">Image Stitching</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_registration.html">Image Registration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../applications/semantic_segmentation.html">Semantic segmentation</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">KORNIA MODELS</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/yunet.html">YuNet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/vit.html">Vision Transformer (ViT)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/vit_mobile.html">MobileViT</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/loftr.html">LoFTR (matching)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/defmo.html">DeFMO (video)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/hardnet.html">Hardnet (descriptor)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/affnet.html">Affnet (detection)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/sold2.html">SOLD2 (Line detection and matching)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../models/dexined.html">Dexined (edge detection)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../get-started/governance.html">Kornia AI Organization</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">API REFERENCE</span></p>
 <ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../augmentation.html">kornia.augmentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../augmentation.html">kornia.augmentation</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of kornia.augmentation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../augmentation.auto.html">Automatic Augmentation Methods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../augmentation.base.html">Base Classes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../augmentation.container.html">Augmentation Containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../augmentation.module.html">Image Augmentations</a></li>
@@ -231,11 +200,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../enhance.html">kornia.enhance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../feature.html">kornia.feature</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../filters.html">kornia.filters</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../geometry.html">kornia.geometry</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../geometry.html">kornia.geometry</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of kornia.geometry</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../../geometry.bbox.html">kornia.geometry.bbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../geometry.boxes.html">kornia.geometry.boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../geometry.keypoints.html">kornia.geometry.keypoints</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../geometry.calibration.html">kornia.geometry.calibration</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../geometry.camera.html">kornia.geometry.camera</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../geometry.camera.html">kornia.geometry.camera</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of kornia.geometry.camera</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../geometry.camera.pinhole.html">Pinhole Camera</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../geometry.camera.perspective.html">Perspective Camera</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../geometry.camera.stereo.html">Stereo Camera</a></li>
@@ -254,6 +224,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../../geometry.ransac.html">kornia.geometry.ransac</a></li>
 </ul>
 </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../sensors.html">kornia.sensors</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of kornia.sensors</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../sensors.camera.html">kornia.sensors.camera</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../io.html">kornia.io</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../losses.html">kornia.losses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../metrics.html">kornia.metrics</a></li>
@@ -262,6 +236,33 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../testing.html">kornia.testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../utils.html">kornia.utils</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../x.html">kornia.x</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">KORNIA APPLICATIONS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/intro.html">Computer Vision Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/visual_prompting.html">Visual Prompting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/face_detection.html">Face Detection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_augmentations.html">Image Augmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_classification.html">Image Classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_matching.html">Image Matching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_stitching.html">Image Stitching</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_registration.html">Image Registration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/image_denoising.html">Image Denoising</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/semantic_segmentation.html">Semantic segmentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../applications/object_detection.html">Object detection</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">KORNIA MODELS</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/segment_anything.html">Segment Anything (SAM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/yunet.html">YuNet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/vit.html">Vision Transformer (ViT)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/vit_mobile.html">MobileViT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/loftr.html">LoFTR (matching)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/defmo.html">DeFMO (video)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/hardnet.html">Hardnet (descriptor)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/affnet.html">Affnet (detection)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/sold2.html">SOLD2 (Line detection and matching)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../models/dexined.html">Dexined (edge detection)</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">SUPPORT</span></p>
 <ul>
@@ -278,7 +279,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../community/contribute.html">Contribute to Kornia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../community/faqs.html">Frequently Asked Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../community/governance.html">Kornia Governance | Persons of interest</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../community/bibliography.html">Bibliography</a></li>
 </ul>
 
@@ -314,13 +314,14 @@
         </div>
         <article role="main">
           <h1>Source code for kornia.geometry.transform.imgwarp</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Tuple</span>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
 
 <span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="k">as</span> <span class="nn">F</span>
 <span class="kn">from</span> <span class="nn">torch.nn.functional</span> <span class="kn">import</span> <span class="n">grid_sample</span>
 
-<span class="kn">from</span> <span class="nn">kornia.core</span> <span class="kn">import</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">stack</span>
+<span class="kn">from</span> <span class="nn">kornia.core</span> <span class="kn">import</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">concatenate</span><span class="p">,</span> <span class="n">stack</span><span class="p">,</span> <span class="n">tensor</span><span class="p">,</span> <span class="n">zeros</span>
+<span class="kn">from</span> <span class="nn">kornia.core.check</span> <span class="kn">import</span> <span class="n">KORNIA_CHECK</span><span class="p">,</span> <span class="n">KORNIA_CHECK_SHAPE</span>
 <span class="kn">from</span> <span class="nn">kornia.geometry.conversions</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">angle_axis_to_rotation_matrix</span><span class="p">,</span>
     <span class="n">angle_to_rotation_matrix</span><span class="p">,</span>
@@ -332,7 +333,6 @@
     <span class="n">normalize_pixel_coordinates</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="kn">from</span> <span class="nn">kornia.geometry.linalg</span> <span class="kn">import</span> <span class="n">transform_points</span>
-<span class="kn">from</span> <span class="nn">kornia.testing</span> <span class="kn">import</span> <span class="n">KORNIA_CHECK</span><span class="p">,</span> <span class="n">KORNIA_CHECK_SHAPE</span>
 <span class="kn">from</span> <span class="nn">kornia.utils</span> <span class="kn">import</span> <span class="n">create_meshgrid</span><span class="p">,</span> <span class="n">create_meshgrid3d</span><span class="p">,</span> <span class="n">eye_like</span>
 <span class="kn">from</span> <span class="nn">kornia.utils.helpers</span> <span class="kn">import</span> <span class="n">_torch_inverse_cast</span><span class="p">,</span> <span class="n">_torch_solve_cast</span>
 
@@ -345,6 +345,7 @@
     <span class="s2">&quot;invert_affine_transform&quot;</span><span class="p">,</span>
     <span class="s2">&quot;get_affine_matrix2d&quot;</span><span class="p">,</span>
     <span class="s2">&quot;get_affine_matrix3d&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;get_translation_matrix2d&quot;</span><span class="p">,</span>
     <span class="s2">&quot;get_shear_matrix2d&quot;</span><span class="p">,</span>
     <span class="s2">&quot;get_shear_matrix3d&quot;</span><span class="p">,</span>
     <span class="s2">&quot;warp_affine3d&quot;</span><span class="p">,</span>
@@ -360,15 +361,15 @@
 
 
 <div class="viewcode-block" id="warp_perspective"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.warp_perspective">[docs]</a><span class="k">def</span> <span class="nf">warp_perspective</span><span class="p">(</span>
-    <span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">M</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dsize</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">M</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dsize</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
     <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span>
     <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;zeros&#39;</span><span class="p">,</span>
     <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="n">fill_value</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>  <span class="c1"># needed for jit</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a perspective transformation to an image.</span>
+    <span class="n">fill_value</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>  <span class="c1"># needed for jit</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a perspective transformation to an image.</span>
 
 <span class="sd">    .. image:: https://kornia-tutorials.readthedocs.io/en/latest/_images/warp_perspective_10_1.png</span>
 
@@ -407,11 +408,11 @@
 <span class="sd">        See a working example `here &lt;https://kornia-tutorials.readthedocs.io/en/</span>
 <span class="sd">        latest/warp_perspective.html&gt;`_.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input M type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input M type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src must be a BxCxHxW tensor. Got </span><span class="si">{</span><span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -428,13 +429,15 @@
     <span class="n">h_out</span><span class="p">,</span> <span class="n">w_out</span> <span class="o">=</span> <span class="n">dsize</span>
 
     <span class="c1"># we normalize the 3x3 transformation matrix and convert to 3x4</span>
-    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">),</span> <span class="p">(</span><span class="n">h_out</span><span class="p">,</span> <span class="n">w_out</span><span class="p">))</span>  <span class="c1"># Bx3x3</span>
+    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">),</span> <span class="p">(</span><span class="n">h_out</span><span class="p">,</span> <span class="n">w_out</span><span class="p">))</span>  <span class="c1"># Bx3x3</span>
 
     <span class="n">src_norm_trans_dst_norm</span> <span class="o">=</span> <span class="n">_torch_inverse_cast</span><span class="p">(</span><span class="n">dst_norm_trans_src_norm</span><span class="p">)</span>  <span class="c1"># Bx3x3</span>
 
     <span class="c1"># this piece of code substitutes F.affine_grid since it does not support 3x3</span>
     <span class="n">grid</span> <span class="o">=</span> <span class="p">(</span>
-        <span class="n">create_meshgrid</span><span class="p">(</span><span class="n">h_out</span><span class="p">,</span> <span class="n">w_out</span><span class="p">,</span> <span class="n">normalized_coordinates</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">src</span><span class="o">.</span><span class="n">device</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">src</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">create_meshgrid</span><span class="p">(</span><span class="n">h_out</span><span class="p">,</span> <span class="n">w_out</span><span class="p">,</span> <span class="n">normalized_coordinates</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">src</span><span class="o">.</span><span class="n">device</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">src</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">expand</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">h_out</span><span class="p">,</span> <span class="n">w_out</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="p">)</span>
     <span class="n">grid</span> <span class="o">=</span> <span class="n">transform_points</span><span class="p">(</span><span class="n">src_norm_trans_dst_norm</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="n">grid</span><span class="p">)</span>
 
@@ -444,15 +447,15 @@
 
 
 <div class="viewcode-block" id="warp_affine"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.warp_affine">[docs]</a><span class="k">def</span> <span class="nf">warp_affine</span><span class="p">(</span>
-    <span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">M</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dsize</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">M</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dsize</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
     <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span>
     <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;zeros&#39;</span><span class="p">,</span>
     <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="n">fill_value</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>  <span class="c1"># needed for jit</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply an affine transformation to a tensor.</span>
+    <span class="n">fill_value</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>  <span class="c1"># needed for jit</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply an affine transformation to a tensor.</span>
 
 <span class="sd">    .. image:: _static/img/warp_affine.png</span>
 
@@ -490,11 +493,11 @@
 <span class="sd">       &gt;&gt;&gt; print(out.shape)</span>
 <span class="sd">       torch.Size([1, 4, 4, 2])</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input M type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input M type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src must be a BxCxHxW tensor. Got </span><span class="si">{</span><span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -510,8 +513,8 @@
     <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
 
     <span class="c1"># we generate a 3x3 transformation matrix from 2x3 affine</span>
-    <span class="n">M_3x3</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
-    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography</span><span class="p">(</span><span class="n">M_3x3</span><span class="p">,</span> <span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">),</span> <span class="n">dsize</span><span class="p">)</span>
+    <span class="n">M_3x3</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
+    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography</span><span class="p">(</span><span class="n">M_3x3</span><span class="p">,</span> <span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">),</span> <span class="n">dsize</span><span class="p">)</span>
 
     <span class="c1"># src_norm_trans_dst_norm = torch.inverse(dst_norm_trans_src_norm)</span>
     <span class="n">src_norm_trans_dst_norm</span> <span class="o">=</span> <span class="n">_torch_inverse_cast</span><span class="p">(</span><span class="n">dst_norm_trans_src_norm</span><span class="p">)</span>
@@ -523,10 +526,8 @@
     <span class="k">return</span> <span class="n">F</span><span class="o">.</span><span class="n">grid_sample</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">align_corners</span><span class="o">=</span><span class="n">align_corners</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">padding_mode</span><span class="o">=</span><span class="n">padding_mode</span><span class="p">)</span></div>
 
 
-<span class="k">def</span> <span class="nf">_fill_and_warp</span><span class="p">(</span>
-    <span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">grid</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">fill_value</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Warp a mask of ones, then multiple with fill_value and add to default warp.</span>
+<span class="k">def</span> <span class="nf">_fill_and_warp</span><span class="p">(</span><span class="n">src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">grid</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span> <span class="n">fill_value</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Warp a mask of ones, then multiple with fill_value and add to default warp.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        src: input tensor of shape :math:`(B, 3, H, W)`.</span>
@@ -545,8 +546,8 @@
     <span class="k">return</span> <span class="n">F</span><span class="o">.</span><span class="n">grid_sample</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">align_corners</span><span class="o">=</span><span class="n">align_corners</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">padding_mode</span><span class="o">=</span><span class="s2">&quot;zeros&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">inv_color_mask</span>
 
 
-<span class="k">def</span> <span class="nf">warp_grid</span><span class="p">(</span><span class="n">grid</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compute the grid to warp the coordinates grid by the homography/ies.</span>
+<span class="k">def</span> <span class="nf">warp_grid</span><span class="p">(</span><span class="n">grid</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compute the grid to warp the coordinates grid by the homography/ies.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        grid: Unwrapped grid of the shape :math:`(1, N, W, 2)`.</span>
@@ -565,12 +566,12 @@
         <span class="n">src_homo_dst</span> <span class="o">=</span> <span class="n">src_homo_dst</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Nx1x3x3</span>
     <span class="c1"># perform the actual grid transformation,</span>
     <span class="c1"># the grid is copied to input device and casted to the same type</span>
-    <span class="n">flow</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">transform_points</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">))</span>  <span class="c1"># NxHxWx2</span>
+    <span class="n">flow</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">transform_points</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">))</span>  <span class="c1"># NxHxWx2</span>
     <span class="k">return</span> <span class="n">flow</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># NxHxWx2</span>
 
 
-<span class="k">def</span> <span class="nf">warp_grid3d</span><span class="p">(</span><span class="n">grid</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compute the grid to warp the coordinates grid by the homography/ies.</span>
+<span class="k">def</span> <span class="nf">warp_grid3d</span><span class="p">(</span><span class="n">grid</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compute the grid to warp the coordinates grid by the homography/ies.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        grid: Unwrapped grid of the shape :math:`(1, D, H, W, 3)`.</span>
@@ -589,7 +590,7 @@
         <span class="n">src_homo_dst</span> <span class="o">=</span> <span class="n">src_homo_dst</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># Nx1x3x3</span>
     <span class="c1"># perform the actual grid transformation,</span>
     <span class="c1"># the grid is copied to input device and casted to the same type</span>
-    <span class="n">flow</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">transform_points</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">))</span>  <span class="c1"># NxDxHxWx3</span>
+    <span class="n">flow</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">transform_points</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">src_homo_dst</span><span class="p">))</span>  <span class="c1"># NxDxHxWx3</span>
     <span class="k">return</span> <span class="n">flow</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">depth</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># NxDxHxWx3</span>
 
 
@@ -601,7 +602,7 @@
 
 
 <div class="viewcode-block" id="get_perspective_transform"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_perspective_transform">[docs]</a><span class="k">def</span> <span class="nf">get_perspective_transform</span><span class="p">(</span><span class="n">points_src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">points_dst</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate a perspective transform from four pairs of the corresponding points.</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate a perspective transform from four pairs of the corresponding points.</span>
 
 <span class="sd">    The algorithm is a vanilla implementation of the Direct Linear transform (DLT).</span>
 <span class="sd">    See more: https://www.cs.cmu.edu/~16385/s17/Slides/10.2_2D_Alignment__DLT.pdf</span>
@@ -660,15 +661,15 @@
     <span class="n">A</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 
     <span class="c1"># we need to perform in batch</span>
-    <span class="n">zeros</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-    <span class="n">ones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+    <span class="n">_zeros</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+    <span class="n">_ones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">device</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">points_src</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
         <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span> <span class="o">=</span> <span class="n">points_src</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">points_src</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># Bx4</span>
         <span class="n">x2</span><span class="p">,</span> <span class="n">y2</span> <span class="o">=</span> <span class="n">points_dst</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">points_dst</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>  <span class="c1"># Bx4</span>
 
-        <span class="n">A</span><span class="p">[:,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">stack</span><span class="p">([</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">ones</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="o">-</span><span class="n">x1</span> <span class="o">*</span> <span class="n">x2</span><span class="p">,</span> <span class="o">-</span><span class="n">y1</span> <span class="o">*</span> <span class="n">x2</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">A</span><span class="p">[:,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">stack</span><span class="p">([</span><span class="n">zeros</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">ones</span><span class="p">,</span> <span class="o">-</span><span class="n">x1</span> <span class="o">*</span> <span class="n">y2</span><span class="p">,</span> <span class="o">-</span><span class="n">y1</span> <span class="o">*</span> <span class="n">y2</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">A</span><span class="p">[:,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">stack</span><span class="p">([</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">_ones</span><span class="p">,</span> <span class="n">_zeros</span><span class="p">,</span> <span class="n">_zeros</span><span class="p">,</span> <span class="n">_zeros</span><span class="p">,</span> <span class="o">-</span><span class="n">x1</span> <span class="o">*</span> <span class="n">x2</span><span class="p">,</span> <span class="o">-</span><span class="n">y1</span> <span class="o">*</span> <span class="n">x2</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">A</span><span class="p">[:,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">stack</span><span class="p">([</span><span class="n">_zeros</span><span class="p">,</span> <span class="n">_zeros</span><span class="p">,</span> <span class="n">_zeros</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">_ones</span><span class="p">,</span> <span class="o">-</span><span class="n">x1</span> <span class="o">*</span> <span class="n">y2</span><span class="p">,</span> <span class="o">-</span><span class="n">y1</span> <span class="o">*</span> <span class="n">y2</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="c1"># the rhs tensor</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">points_dst</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -685,8 +686,8 @@
 
 
 <span class="c1"># TODO: move to kornia.geometry.affine</span>
-<div class="viewcode-block" id="get_rotation_matrix2d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_rotation_matrix2d">[docs]</a><span class="k">def</span> <span class="nf">get_rotation_matrix2d</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">angle</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">scale</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate an affine matrix of 2D rotation.</span>
+<div class="viewcode-block" id="get_rotation_matrix2d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_rotation_matrix2d">[docs]</a><span class="k">def</span> <span class="nf">get_rotation_matrix2d</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">angle</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">scale</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate an affine matrix of 2D rotation.</span>
 
 <span class="sd">    The function calculates the following matrix:</span>
 
@@ -718,7 +719,7 @@
 <span class="sd">        the affine matrix of 2D rotation with shape :math:`(B, 2, 3)`.</span>
 
 <span class="sd">    Example:</span>
-<span class="sd">        &gt;&gt;&gt; center = torch.zeros(1, 2)</span>
+<span class="sd">        &gt;&gt;&gt; center = zeros(1, 2)</span>
 <span class="sd">        &gt;&gt;&gt; scale = torch.ones((1, 2))</span>
 <span class="sd">        &gt;&gt;&gt; angle = 45. * torch.ones(1)</span>
 <span class="sd">        &gt;&gt;&gt; get_rotation_matrix2d(center, angle, scale)</span>
@@ -728,14 +729,14 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`warp_affine`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input center type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">center</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input center type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">center</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">angle</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input angle type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">angle</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input angle type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input scale type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">scale</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input scale type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">center</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input center must be a Bx2 tensor. Got </span><span class="si">{</span><span class="n">center</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -783,10 +784,10 @@
     <span class="n">map_y</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
     <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span>
     <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;zeros&#39;</span><span class="p">,</span>
-    <span class="n">align_corners</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">normalized_coordinates</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a generic geometrical transformation to an image tensor.</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a generic geometrical transformation to an image tensor.</span>
 
 <span class="sd">    .. image:: _static/img/remap.png</span>
 
@@ -846,8 +847,8 @@
     <span class="k">return</span> <span class="n">grid_sample</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">map_xy</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">padding_mode</span><span class="o">=</span><span class="n">padding_mode</span><span class="p">,</span> <span class="n">align_corners</span><span class="o">=</span><span class="n">align_corners</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="invert_affine_transform"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.invert_affine_transform">[docs]</a><span class="k">def</span> <span class="nf">invert_affine_transform</span><span class="p">(</span><span class="n">matrix</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Invert an affine transformation.</span>
+<div class="viewcode-block" id="invert_affine_transform"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.invert_affine_transform">[docs]</a><span class="k">def</span> <span class="nf">invert_affine_transform</span><span class="p">(</span><span class="n">matrix</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Invert an affine transformation.</span>
 
 <span class="sd">    The function computes an inverse affine transformation represented by</span>
 <span class="sd">    2×3 matrix:</span>
@@ -870,27 +871,27 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`warp_affine`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input matrix type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input matrix type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">and</span> <span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span> <span class="o">==</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)):</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input matrix must be a Bx2x3 tensor. Got </span><span class="si">{</span><span class="n">matrix</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="n">matrix_tmp</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
-    <span class="n">matrix_inv</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">_torch_inverse_cast</span><span class="p">(</span><span class="n">matrix_tmp</span><span class="p">)</span>
+    <span class="n">matrix_tmp</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
+    <span class="n">matrix_inv</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">_torch_inverse_cast</span><span class="p">(</span><span class="n">matrix_tmp</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">matrix_inv</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span></div>
 
 
 <div class="viewcode-block" id="get_affine_matrix2d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_affine_matrix2d">[docs]</a><span class="k">def</span> <span class="nf">get_affine_matrix2d</span><span class="p">(</span>
-    <span class="n">translations</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">center</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">scale</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">angle</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">sx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">sy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose affine matrix from the components.</span>
+    <span class="n">translations</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">center</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">scale</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">angle</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">sx</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">sy</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose affine matrix from the components.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        translations: tensor containing the translation vector with shape :math:`(B, 2)`.</span>
@@ -906,7 +907,7 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`warp_affine`, :func:`warp_perspective`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">transform</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">get_rotation_matrix2d</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="o">-</span><span class="n">angle</span><span class="p">,</span> <span class="n">scale</span><span class="p">)</span>
+    <span class="n">transform</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">get_rotation_matrix2d</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="o">-</span><span class="n">angle</span><span class="p">,</span> <span class="n">scale</span><span class="p">)</span>
     <span class="n">transform</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="n">translations</span>  <span class="c1"># tx/ty</span>
 
     <span class="c1"># pad transform to get Bx3x3</span>
@@ -919,8 +920,29 @@
     <span class="k">return</span> <span class="n">transform_h</span></div>
 
 
-<div class="viewcode-block" id="get_shear_matrix2d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_shear_matrix2d">[docs]</a><span class="k">def</span> <span class="nf">get_shear_matrix2d</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">sx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose shear matrix Bx4x4 from the components.</span>
+<span class="k">def</span> <span class="nf">get_translation_matrix2d</span><span class="p">(</span><span class="n">translations</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose translation matrix from the components.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        translations: tensor containing the translation vector with shape :math:`(B, 2)`.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        the affine transformation matrix :math:`(B, 3, 3)`.</span>
+
+<span class="sd">    .. note::</span>
+<span class="sd">        This function is often used in conjunction with :func:`warp_affine`, :func:`warp_perspective`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">transform</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">eye_like</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">translations</span><span class="p">)[:,</span> <span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span>
+    <span class="n">transform</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="n">translations</span>  <span class="c1"># tx/ty</span>
+
+    <span class="c1"># pad transform to get Bx3x3</span>
+    <span class="n">transform_h</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography</span><span class="p">(</span><span class="n">transform</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">transform_h</span>
+
+
+<div class="viewcode-block" id="get_shear_matrix2d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_shear_matrix2d">[docs]</a><span class="k">def</span> <span class="nf">get_shear_matrix2d</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">sx</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sy</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose shear matrix Bx4x4 from the components.</span>
 
 <span class="sd">    Note: Ordered shearing, shear x-axis then y-axis.</span>
 
@@ -952,36 +974,36 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`warp_affine`, :func:`warp_perspective`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">sx</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sx</span>
-    <span class="n">sy</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sy</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sy</span>
+    <span class="n">sx</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sx</span>
+    <span class="n">sy</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sy</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sy</span>
 
     <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">y</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
-    <span class="n">sx_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sx</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">sy_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sy</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">ones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">sx</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">shear_mat</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span>
-        <span class="p">[</span><span class="n">ones</span><span class="p">,</span> <span class="o">-</span><span class="n">sx_tan</span><span class="p">,</span> <span class="n">sx_tan</span> <span class="o">*</span> <span class="n">y</span><span class="p">,</span> <span class="o">-</span><span class="n">sy_tan</span><span class="p">,</span> <span class="n">ones</span> <span class="o">+</span> <span class="n">sx_tan</span> <span class="o">*</span> <span class="n">sy_tan</span><span class="p">,</span> <span class="n">sy_tan</span> <span class="o">*</span> <span class="p">(</span><span class="n">sx_tan</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">x</span><span class="p">)],</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span>  <span class="c1"># type: ignore</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">sx_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sx</span><span class="p">)</span>
+    <span class="n">sy_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sy</span><span class="p">)</span>
+    <span class="n">ones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">sx</span><span class="p">)</span>
+    <span class="n">shear_mat</span> <span class="o">=</span> <span class="n">stack</span><span class="p">([</span><span class="n">ones</span><span class="p">,</span> <span class="o">-</span><span class="n">sx_tan</span><span class="p">,</span> <span class="n">sx_tan</span> <span class="o">*</span> <span class="n">y</span><span class="p">,</span> <span class="o">-</span><span class="n">sy_tan</span><span class="p">,</span> <span class="n">ones</span> <span class="o">+</span> <span class="n">sx_tan</span> <span class="o">*</span> <span class="n">sy_tan</span><span class="p">,</span> <span class="n">sy_tan</span> <span class="o">*</span> <span class="p">(</span><span class="n">sx_tan</span> <span class="o">*</span> <span class="n">y</span> <span class="o">+</span> <span class="n">x</span><span class="p">)],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span>
+        <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
+    <span class="p">)</span>
 
     <span class="n">shear_mat</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography</span><span class="p">(</span><span class="n">shear_mat</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">shear_mat</span></div>
 
 
 <div class="viewcode-block" id="get_affine_matrix3d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_affine_matrix3d">[docs]</a><span class="k">def</span> <span class="nf">get_affine_matrix3d</span><span class="p">(</span>
-    <span class="n">translations</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">center</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">scale</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">angles</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">sxy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">sxz</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">syx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">syz</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">szx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">szy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose 3d affine matrix from the components.</span>
+    <span class="n">translations</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">center</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">scale</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">angles</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">sxy</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">sxz</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">syx</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">syz</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">szx</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">szy</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose 3d affine matrix from the components.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        translations: tensor containing the translation vector (dx,dy,dz) with shape :math:`(B, 3)`.</span>
@@ -1003,7 +1025,7 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`warp_perspective`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">transform</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">get_projective_transform</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="o">-</span><span class="n">angles</span><span class="p">,</span> <span class="n">scale</span><span class="p">)</span>
+    <span class="n">transform</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">get_projective_transform</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="o">-</span><span class="n">angles</span><span class="p">,</span> <span class="n">scale</span><span class="p">)</span>
     <span class="n">transform</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">+=</span> <span class="n">translations</span>  <span class="c1"># tx/ty/tz</span>
 
     <span class="c1"># pad transform to get Bx3x3</span>
@@ -1016,15 +1038,15 @@
 
 
 <div class="viewcode-block" id="get_shear_matrix3d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_shear_matrix3d">[docs]</a><span class="k">def</span> <span class="nf">get_shear_matrix3d</span><span class="p">(</span>
-    <span class="n">center</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">sxy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">sxz</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">syx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">syz</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">szx</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-    <span class="n">szy</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<span class="p">):</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose shear matrix Bx4x4 from the components.</span>
+    <span class="n">center</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">sxy</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">sxz</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">syx</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">syz</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">szx</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">szy</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compose shear matrix Bx4x4 from the components.</span>
 <span class="sd">    Note: Ordered shearing, shear x-axis then y-axis then z-axis.</span>
 
 <span class="sd">    .. math::</span>
@@ -1071,22 +1093,22 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`warp_perspective3d`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">sxy</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sxy</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sxy</span>
-    <span class="n">sxz</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sxz</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sxz</span>
-    <span class="n">syx</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">syx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">syx</span>
-    <span class="n">syz</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">syz</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">syz</span>
-    <span class="n">szx</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">szx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">szx</span>
-    <span class="n">szy</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">szy</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">szy</span>
+    <span class="n">sxy</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sxy</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sxy</span>
+    <span class="n">sxz</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">sxz</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">sxz</span>
+    <span class="n">syx</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">syx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">syx</span>
+    <span class="n">syz</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">syz</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">syz</span>
+    <span class="n">szx</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">szx</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">szx</span>
+    <span class="n">szy</span> <span class="o">=</span> <span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span> <span class="k">if</span> <span class="n">szy</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">szy</span>
 
     <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">y</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">z</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
     <span class="c1"># Prepare parameters</span>
-    <span class="n">sxy_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sxy</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">sxz_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sxz</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">syx_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">syx</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">syz_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">syz</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">szx_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">szx</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
-    <span class="n">szy_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">szy</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+    <span class="n">sxy_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sxy</span><span class="p">)</span>
+    <span class="n">sxz_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">sxz</span><span class="p">)</span>
+    <span class="n">syx_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">syx</span><span class="p">)</span>
+    <span class="n">syz_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">syz</span><span class="p">)</span>
+    <span class="n">szx_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">szx</span><span class="p">)</span>
+    <span class="n">szy_tan</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">szy</span><span class="p">)</span>
 
     <span class="c1"># compute translation matrix</span>
     <span class="n">m00</span><span class="p">,</span> <span class="n">m10</span><span class="p">,</span> <span class="n">m20</span><span class="p">,</span> <span class="n">m01</span><span class="p">,</span> <span class="n">m11</span><span class="p">,</span> <span class="n">m21</span><span class="p">,</span> <span class="n">m02</span><span class="p">,</span> <span class="n">m12</span><span class="p">,</span> <span class="n">m22</span> <span class="o">=</span> <span class="n">_compute_shear_matrix_3d</span><span class="p">(</span>
@@ -1103,14 +1125,14 @@
         <span class="n">sxy_tan</span><span class="p">,</span> <span class="n">sxz_tan</span><span class="p">,</span> <span class="n">syx_tan</span><span class="p">,</span> <span class="n">syz_tan</span><span class="p">,</span> <span class="n">szx_tan</span><span class="p">,</span> <span class="n">szy_tan</span>
     <span class="p">)</span>
 
-    <span class="n">shear_mat</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">([</span><span class="n">m00</span><span class="p">,</span> <span class="n">m01</span><span class="p">,</span> <span class="n">m02</span><span class="p">,</span> <span class="n">m03</span><span class="p">,</span> <span class="n">m10</span><span class="p">,</span> <span class="n">m11</span><span class="p">,</span> <span class="n">m12</span><span class="p">,</span> <span class="n">m13</span><span class="p">,</span> <span class="n">m20</span><span class="p">,</span> <span class="n">m21</span><span class="p">,</span> <span class="n">m22</span><span class="p">,</span> <span class="n">m23</span><span class="p">],</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">shear_mat</span> <span class="o">=</span> <span class="n">stack</span><span class="p">([</span><span class="n">m00</span><span class="p">,</span> <span class="n">m01</span><span class="p">,</span> <span class="n">m02</span><span class="p">,</span> <span class="n">m03</span><span class="p">,</span> <span class="n">m10</span><span class="p">,</span> <span class="n">m11</span><span class="p">,</span> <span class="n">m12</span><span class="p">,</span> <span class="n">m13</span><span class="p">,</span> <span class="n">m20</span><span class="p">,</span> <span class="n">m21</span><span class="p">,</span> <span class="n">m22</span><span class="p">,</span> <span class="n">m23</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
     <span class="n">shear_mat</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography3d</span><span class="p">(</span><span class="n">shear_mat</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">shear_mat</span></div>
 
 
 <span class="k">def</span> <span class="nf">_compute_shear_matrix_3d</span><span class="p">(</span><span class="n">sxy_tan</span><span class="p">,</span> <span class="n">sxz_tan</span><span class="p">,</span> <span class="n">syx_tan</span><span class="p">,</span> <span class="n">syz_tan</span><span class="p">,</span> <span class="n">szx_tan</span><span class="p">,</span> <span class="n">szy_tan</span><span class="p">):</span>
-    <span class="n">ones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">sxy_tan</span><span class="p">)</span>  <span class="c1"># type: ignore</span>
+    <span class="n">ones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">sxy_tan</span><span class="p">)</span>
 
     <span class="n">m00</span><span class="p">,</span> <span class="n">m10</span><span class="p">,</span> <span class="n">m20</span> <span class="o">=</span> <span class="n">ones</span><span class="p">,</span> <span class="n">sxy_tan</span><span class="p">,</span> <span class="n">sxz_tan</span>
     <span class="n">m01</span><span class="p">,</span> <span class="n">m11</span><span class="p">,</span> <span class="n">m21</span> <span class="o">=</span> <span class="n">syx_tan</span><span class="p">,</span> <span class="n">sxy_tan</span> <span class="o">*</span> <span class="n">syx_tan</span> <span class="o">+</span> <span class="n">ones</span><span class="p">,</span> <span class="n">sxz_tan</span> <span class="o">*</span> <span class="n">syx_tan</span> <span class="o">+</span> <span class="n">syz_tan</span>
@@ -1121,14 +1143,14 @@
 
 
 <div class="viewcode-block" id="warp_affine3d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.warp_affine3d">[docs]</a><span class="k">def</span> <span class="nf">warp_affine3d</span><span class="p">(</span>
-    <span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">M</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dsize</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">M</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dsize</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
     <span class="n">flags</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span>
     <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;zeros&#39;</span><span class="p">,</span>
     <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a projective transformation a to 3d tensor.</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a projective transformation a to 3d tensor.</span>
 
 <span class="sd">    .. warning::</span>
 <span class="sd">        This API signature it is experimental and might suffer some changes in the future.</span>
@@ -1144,7 +1166,7 @@
 <span class="sd">        align_corners : mode for grid_generation.</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">        torch.Tensor: the warped 3d tensor with shape :math:`(B, C, D, H, W)`.</span>
+<span class="sd">        Tensor: the warped 3d tensor with shape :math:`(B, C, D, H, W)`.</span>
 
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`get_perspective_transform3d`.</span>
@@ -1157,27 +1179,25 @@
         <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="n">dsize</span><span class="p">)</span>
     <span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="n">src</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
 
-    <span class="n">size_src</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span>
-    <span class="n">size_out</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">dsize</span>
+    <span class="n">size_src</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span>
+    <span class="n">size_out</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">dsize</span>
 
     <span class="n">M_4x4</span> <span class="o">=</span> <span class="n">convert_affinematrix_to_homography3d</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>  <span class="c1"># Bx4x4</span>
 
     <span class="c1"># we need to normalize the transformation since grid sample needs -1/1 coordinates</span>
-    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography3d</span><span class="p">(</span><span class="n">M_4x4</span><span class="p">,</span> <span class="n">size_src</span><span class="p">,</span> <span class="n">size_out</span><span class="p">)</span>  <span class="c1"># Bx4x4</span>
+    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography3d</span><span class="p">(</span><span class="n">M_4x4</span><span class="p">,</span> <span class="n">size_src</span><span class="p">,</span> <span class="n">size_out</span><span class="p">)</span>  <span class="c1"># Bx4x4</span>
 
     <span class="n">src_norm_trans_dst_norm</span> <span class="o">=</span> <span class="n">_torch_inverse_cast</span><span class="p">(</span><span class="n">dst_norm_trans_src_norm</span><span class="p">)</span>
-    <span class="n">P_norm</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">src_norm_trans_dst_norm</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># Bx3x4</span>
+    <span class="n">P_norm</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">src_norm_trans_dst_norm</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># Bx3x4</span>
 
     <span class="c1"># compute meshgrid and apply to input</span>
-    <span class="n">dsize_out</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">size_out</span><span class="p">)</span>
-    <span class="n">grid</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">affine_grid</span><span class="p">(</span><span class="n">P_norm</span><span class="p">,</span> <span class="n">dsize_out</span><span class="p">,</span> <span class="n">align_corners</span><span class="o">=</span><span class="n">align_corners</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">functional</span><span class="o">.</span><span class="n">grid_sample</span><span class="p">(</span>
-        <span class="n">src</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">align_corners</span><span class="o">=</span><span class="n">align_corners</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span> <span class="n">padding_mode</span><span class="o">=</span><span class="n">padding_mode</span>
-    <span class="p">)</span></div>
+    <span class="n">dsize_out</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">size_out</span><span class="p">)</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">affine_grid</span><span class="p">(</span><span class="n">P_norm</span><span class="p">,</span> <span class="n">dsize_out</span><span class="p">,</span> <span class="n">align_corners</span><span class="o">=</span><span class="n">align_corners</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">grid_sample</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">grid</span><span class="p">,</span> <span class="n">align_corners</span><span class="o">=</span><span class="n">align_corners</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">flags</span><span class="p">,</span> <span class="n">padding_mode</span><span class="o">=</span><span class="n">padding_mode</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="projection_from_Rt"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.projection_from_Rt">[docs]</a><span class="k">def</span> <span class="nf">projection_from_Rt</span><span class="p">(</span><span class="n">rmat</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">tvec</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compute the projection matrix from Rotation and translation.</span>
+<div class="viewcode-block" id="projection_from_Rt"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.projection_from_Rt">[docs]</a><span class="k">def</span> <span class="nf">projection_from_Rt</span><span class="p">(</span><span class="n">rmat</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">tvec</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Compute the projection matrix from Rotation and translation.</span>
 
 <span class="sd">    .. warning::</span>
 <span class="sd">        This API signature it is experimental and might suffer some changes in the future.</span>
@@ -1196,11 +1216,11 @@
     <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tvec</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">tvec</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span> <span class="o">==</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)):</span>
         <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="n">tvec</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">rmat</span><span class="p">,</span> <span class="n">tvec</span><span class="p">],</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Bx3x4</span></div>
+    <span class="k">return</span> <span class="n">concatenate</span><span class="p">([</span><span class="n">rmat</span><span class="p">,</span> <span class="n">tvec</span><span class="p">],</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Bx3x4</span></div>
 
 
-<div class="viewcode-block" id="get_projective_transform"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_projective_transform">[docs]</a><span class="k">def</span> <span class="nf">get_projective_transform</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">angles</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">scales</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate the projection matrix for a 3D rotation.</span>
+<div class="viewcode-block" id="get_projective_transform"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_projective_transform">[docs]</a><span class="k">def</span> <span class="nf">get_projective_transform</span><span class="p">(</span><span class="n">center</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">angles</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">scales</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate the projection matrix for a 3D rotation.</span>
 
 <span class="sd">    .. warning::</span>
 <span class="sd">        This API signature it is experimental and might suffer some changes in the future.</span>
@@ -1230,14 +1250,14 @@
         <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="n">center</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">angles</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 
     <span class="c1"># create rotation matrix</span>
-    <span class="n">angle_axis_rad</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">deg2rad</span><span class="p">(</span><span class="n">angles</span><span class="p">)</span>
-    <span class="n">rmat</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">angle_axis_to_rotation_matrix</span><span class="p">(</span><span class="n">angle_axis_rad</span><span class="p">)</span>  <span class="c1"># Bx3x3</span>
-    <span class="n">scaling_matrix</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">eye_like</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">rmat</span><span class="p">)</span>
+    <span class="n">angle_axis_rad</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">deg2rad</span><span class="p">(</span><span class="n">angles</span><span class="p">)</span>
+    <span class="n">rmat</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">angle_axis_to_rotation_matrix</span><span class="p">(</span><span class="n">angle_axis_rad</span><span class="p">)</span>  <span class="c1"># Bx3x3</span>
+    <span class="n">scaling_matrix</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">eye_like</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">rmat</span><span class="p">)</span>
     <span class="n">scaling_matrix</span> <span class="o">=</span> <span class="n">scaling_matrix</span> <span class="o">*</span> <span class="n">scales</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">rmat</span> <span class="o">=</span> <span class="n">rmat</span> <span class="o">@</span> <span class="n">scaling_matrix</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">rmat</span><span class="p">)</span>
 
     <span class="c1"># define matrix to move forth and back to origin</span>
-    <span class="n">from_origin_mat</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)[</span><span class="kc">None</span><span class="p">]</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="n">rmat</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">type_as</span><span class="p">(</span><span class="n">center</span><span class="p">)</span>  <span class="c1"># Bx4x4</span>
+    <span class="n">from_origin_mat</span> <span class="o">=</span> <span class="n">eye_like</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">rmat</span><span class="p">,</span> <span class="n">shared_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># Bx4x4</span>
     <span class="n">from_origin_mat</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="n">center</span>
 
     <span class="n">to_origin_mat</span> <span class="o">=</span> <span class="n">from_origin_mat</span><span class="o">.</span><span class="n">clone</span><span class="p">()</span>
@@ -1253,8 +1273,8 @@
     <span class="k">return</span> <span class="n">proj_mat</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="p">:]</span>  <span class="c1"># Bx3x4</span></div>
 
 
-<div class="viewcode-block" id="get_perspective_transform3d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_perspective_transform3d">[docs]</a><span class="k">def</span> <span class="nf">get_perspective_transform3d</span><span class="p">(</span><span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">dst</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate a 3d perspective transform from four pairs of the corresponding points.</span>
+<div class="viewcode-block" id="get_perspective_transform3d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.get_perspective_transform3d">[docs]</a><span class="k">def</span> <span class="nf">get_perspective_transform3d</span><span class="p">(</span><span class="n">src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">dst</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Calculate a 3d perspective transform from four pairs of the corresponding points.</span>
 
 <span class="sd">    The function calculates the matrix of a perspective transform so that:</span>
 
@@ -1322,11 +1342,11 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`warp_perspective3d`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="p">(</span><span class="n">Tensor</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dst</span><span class="p">,</span> <span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">dst</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dst</span><span class="p">,</span> <span class="p">(</span><span class="n">Tensor</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">dst</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:]</span> <span class="o">==</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Inputs must be a Bx8x3 tensor. Got </span><span class="si">{</span><span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1355,10 +1375,10 @@
         <span class="n">p</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_build_perspective_param3d</span><span class="p">(</span><span class="n">src</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="n">dst</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="s1">&#39;z&#39;</span><span class="p">))</span>
 
     <span class="c1"># A is Bx15x15</span>
-    <span class="n">A</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="n">stack</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
     <span class="c1"># b is a Bx15x1</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">stack</span><span class="p">(</span>
         <span class="p">[</span>
             <span class="n">dst</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
             <span class="n">dst</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
@@ -1379,7 +1399,7 @@
             <span class="n">dst</span><span class="p">[:,</span> <span class="mi">7</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
             <span class="n">dst</span><span class="p">[:,</span> <span class="mi">7</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
         <span class="p">],</span>
-        <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="mi">1</span><span class="p">,</span>
     <span class="p">)</span>
 
     <span class="c1"># solve the system Ax = b</span>
@@ -1394,12 +1414,12 @@
     <span class="k">return</span> <span class="n">M</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># Bx4x4</span></div>
 
 
-<span class="k">def</span> <span class="nf">_build_perspective_param3d</span><span class="p">(</span><span class="n">p</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span> <span class="n">axis</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
+<span class="k">def</span> <span class="nf">_build_perspective_param3d</span><span class="p">(</span><span class="n">p</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">q</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">axis</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
     <span class="n">ones</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">p</span><span class="p">)[</span><span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
     <span class="n">zeros</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">p</span><span class="p">)[</span><span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
 
     <span class="k">if</span> <span class="n">axis</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span>
+        <span class="k">return</span> <span class="n">concatenate</span><span class="p">(</span>
             <span class="p">[</span>
                 <span class="n">p</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">],</span>
                 <span class="n">p</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span>
@@ -1417,11 +1437,11 @@
                 <span class="o">-</span><span class="n">p</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">q</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">],</span>
                 <span class="o">-</span><span class="n">p</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="n">q</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">],</span>
             <span class="p">],</span>
-            <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
         <span class="p">)</span>
 
     <span class="k">if</span> <span class="n">axis</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span>
+        <span class="k">return</span> <span class="n">concatenate</span><span class="p">(</span>
             <span class="p">[</span>
                 <span class="n">zeros</span><span class="p">,</span>
                 <span class="n">zeros</span><span class="p">,</span>
@@ -1439,11 +1459,11 @@
                 <span class="o">-</span><span class="n">p</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">q</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span>
                 <span class="o">-</span><span class="n">p</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="n">q</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span>
             <span class="p">],</span>
-            <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
         <span class="p">)</span>
 
     <span class="k">if</span> <span class="n">axis</span> <span class="o">==</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">(</span>
+        <span class="k">return</span> <span class="n">concatenate</span><span class="p">(</span>
             <span class="p">[</span>
                 <span class="n">zeros</span><span class="p">,</span>
                 <span class="n">zeros</span><span class="p">,</span>
@@ -1461,21 +1481,21 @@
                 <span class="o">-</span><span class="n">p</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">q</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span>
                 <span class="o">-</span><span class="n">p</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="n">q</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">3</span><span class="p">],</span>
             <span class="p">],</span>
-            <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="mi">1</span><span class="p">,</span>
         <span class="p">)</span>
 
     <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;perspective params for axis `</span><span class="si">{</span><span class="n">axis</span><span class="si">}</span><span class="s2">` is not implemented.&quot;</span><span class="p">)</span>
 
 
 <div class="viewcode-block" id="warp_perspective3d"><a class="viewcode-back" href="../../../../geometry.transform.html#kornia.geometry.transform.warp_perspective3d">[docs]</a><span class="k">def</span> <span class="nf">warp_perspective3d</span><span class="p">(</span>
-    <span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">M</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dsize</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">M</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dsize</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
     <span class="n">flags</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span>
     <span class="n">border_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;zeros&#39;</span><span class="p">,</span>
     <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a perspective transformation to an image.</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Apply a perspective transformation to an image.</span>
 
 <span class="sd">    The function warp_perspective transforms the source image using</span>
 <span class="sd">    the specified matrix:</span>
@@ -1502,11 +1522,11 @@
 <span class="sd">    .. note::</span>
 <span class="sd">        This function is often used in conjunction with :func:`get_perspective_transform3d`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">src</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">):</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input M type is not a torch.Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input M type is not a Tensor. Got </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input src must be a BxCxDxHxW tensor. Got </span><span class="si">{</span><span class="n">src</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -1520,16 +1540,16 @@
 
 
 <span class="k">def</span> <span class="nf">homography_warp</span><span class="p">(</span>
-    <span class="n">patch_src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dsize</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">patch_src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dsize</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
     <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span>
     <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;zeros&#39;</span><span class="p">,</span>
     <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">normalized_coordinates</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
     <span class="n">normalized_homography</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Warp image patches or tensors by normalized 2D homographies.</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Warp image patches or tensors by normalized 2D homographies.</span>
 
 <span class="sd">    See :class:`~kornia.geometry.warp.HomographyWarper` for details.</span>
 
@@ -1581,31 +1601,31 @@
 
 
 <span class="k">def</span> <span class="nf">_transform_warp_impl3d</span><span class="p">(</span>
-    <span class="n">src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dst_pix_trans_src_pix</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dsize_src</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
-    <span class="n">dsize_dst</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dst_pix_trans_src_pix</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dsize_src</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">dsize_dst</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
     <span class="n">grid_mode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Compute the transform in normalized coordinates and perform the warping.&quot;&quot;&quot;</span>
-    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography3d</span><span class="p">(</span><span class="n">dst_pix_trans_src_pix</span><span class="p">,</span> <span class="n">dsize_src</span><span class="p">,</span> <span class="n">dsize_dst</span><span class="p">)</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Compute the transform in normalized coordinates and perform the warping.&quot;&quot;&quot;</span>
+    <span class="n">dst_norm_trans_src_norm</span><span class="p">:</span> <span class="n">Tensor</span> <span class="o">=</span> <span class="n">normalize_homography3d</span><span class="p">(</span><span class="n">dst_pix_trans_src_pix</span><span class="p">,</span> <span class="n">dsize_src</span><span class="p">,</span> <span class="n">dsize_dst</span><span class="p">)</span>
 
     <span class="n">src_norm_trans_dst_norm</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">inverse</span><span class="p">(</span><span class="n">dst_norm_trans_src_norm</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">homography_warp3d</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">src_norm_trans_dst_norm</span><span class="p">,</span> <span class="n">dsize_dst</span><span class="p">,</span> <span class="n">grid_mode</span><span class="p">,</span> <span class="n">padding_mode</span><span class="p">,</span> <span class="n">align_corners</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">homography_warp3d</span><span class="p">(</span>
-    <span class="n">patch_src</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span>
-    <span class="n">dsize</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
+    <span class="n">patch_src</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">src_homo_dst</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">,</span>
+    <span class="n">dsize</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">int</span><span class="p">],</span>
     <span class="n">mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;bilinear&#39;</span><span class="p">,</span>
     <span class="n">padding_mode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;zeros&#39;</span><span class="p">,</span>
     <span class="n">align_corners</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">normalized_coordinates</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;Warp image patches or tensors by normalized 3D homographies.</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tensor</span><span class="p">:</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Warp image patches or tensors by normalized 3D homographies.</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        patch_src: The image or tensor to warp. Should be from source of shape :math:`(N, C, D, H, W)`.</span>
@@ -1660,9 +1680,7 @@
             
           </div>
           <div class="right-details">
-            <div class="icons">
-              
-            </div>
+            
           </div>
         </div>
         
@@ -1676,9 +1694,6 @@
   </div>
 </div>
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-    <script src="../../../../_static/jquery.js"></script>
-    <script src="../../../../_static/underscore.js"></script>
-    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
     <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/scripts/furo.js"></script>
